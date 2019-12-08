@@ -2,9 +2,10 @@
 
 Installer NodeJS: [NodeJS](https://nodejs.org/en/)
 
-Une fois NodeJS installé, vous devez télécharger toutes les dépendances.
+Une fois que vous avez installer NodeJS, ouvrez le répertoire dans lequel se trouve le projet que vous avez préalablement cloné.
 
-Pour cela utiliser la commande:
+Rendez-vous alors à la racine du projet: où se trouvent les dossiers src et les fichiers package.json
+Téléchargez alors toutes les dépendances en utilisant la commande:
 `npm install`
 
 Une fois que toutes les dépendances sont installées, utiliser la commande:
