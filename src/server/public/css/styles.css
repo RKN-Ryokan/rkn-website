@@ -3,12 +3,16 @@ html {
   font-family: "Sulphur Point", sans-serif;
 }
 
+::-webkit-scrollbar {
+  width: 0;
+}
+
 h1, h2, h3, h4, h5, h6 {
   font-family: "Bebas Neue", cursive;
 }
 
 body {
-  width: 90%;
+  min-height: 100vh;
   margin: auto;
 
   display: flex;
@@ -26,17 +30,11 @@ body {
 
 /* Structural modifications */
 header {
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: row;
-
   background-color: #0a1441;
 }
 
 main {
-  width: 90%;
-  margin: auto;
-
+  flex: 1;
   background-color: white;
 }
 
@@ -53,41 +51,35 @@ footer {
 
 /* Navigation - Navbar */
 nav {
-  width: 100%;
+  padding: 0 2%;
 
   display: flex;
   flex-direction: row;
-
-  align-items: center;
 }
 @media screen and (max-width: 780px) {
   nav {
-    width: 100%;
-  
-    display: flex;
     flex-wrap: wrap;
-    flex-direction: row;
-  
-    align-items: center;
     justify-content: center;
   }
 }
 
 nav .logo {
-  height: 55px;
-  margin: 0 2%;
   padding: 2%;
 
   cursor: pointer;
 }
 nav .logo:hover {
-  box-shadow: inset 0 0 50px #122474;
   border-radius: 50%;
+  box-shadow: inset 0 0 50px #122474;
+}
+nav .logo img {
+  height: 55px;
+  vertical-align: middle;
 }
 
 nav .nav-menu {
   width: 100%;
-  margin: 0 2%;
+  padding: 0 2%;
 
   display: flex;
   justify-content: space-evenly;
@@ -101,6 +93,7 @@ nav .nav-menu .nav-item {
 
   color: white;
   cursor: pointer;
+  text-decoration: none;
 }
 nav .nav-menu .nav-item:hover {
   background-color: #122474;
@@ -112,6 +105,8 @@ nav .nav-menu .nav-item i {
 
 nav .nav-menu .nav-item img {
   height: 30px;
+  min-height: 30px;
+
   filter: invert(100%);
 }
 
@@ -132,4 +127,35 @@ nav .nav-menu .nav-item img {
 .banner img {
   width: 100%;
   height: 650px;
+}
+
+
+
+.article {
+  padding: 0 5%;
+
+  display: flex;
+}
+@media screen and (max-width: 780px) {
+  .article {
+    flex-direction: column;
+  }
+}
+
+.article-inverse {
+  padding: 0 5%;
+
+  display: flex;
+
+  color: white;
+  background-color: #0a1441;
+}
+@media screen and (max-width: 780px) {
+  .article-inverse {
+    flex-direction: column;
+  }
+}
+
+.article-content {
+  padding: 2% 0;
 }

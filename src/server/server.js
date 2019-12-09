@@ -10,7 +10,16 @@ const viewsPath = path.join(__dirname, "./views");
 //Set view engines
 app.set("views", viewsPath);
 app.set("view engine", "ejs");
-app.use(express.static(publicPath));
+
+app.use(express.static(publicPath, {
+  etag: false,
+  maxAge: '-1d',
+  setHeaders: setCustomCacheControl
+}));
+
+function setCustomCacheControl(res, path) {
+  res.setHeader('Cache-Control', 'no-store, no-cache, must-revalidate, private');
+}
 
 //Render pages
 app.get("/", (req, res) => {
