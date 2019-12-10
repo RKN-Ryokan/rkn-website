@@ -9,9 +9,15 @@
   <header>
     <%- include ('../partials/header'); %>
   </header>
+
+  <banner>
+    <%- include ('../partials/banner'); %>
+  </banner>
+
   <main>
-    <div class="article">
+    <div id="team" class="article-inverse">
       <img src="./img/image3.png" style="height: 500px;" />
+
       <div class="article-content">
         <h1>Content</h1>
         <p>
@@ -42,7 +48,8 @@
         </p>
       </div>
     </div>
-    <div class="article-inverse">
+
+    <div id="discord" class="article">
       <div class="article-content">
         <h1>Content</h1>
         <p>
@@ -72,12 +79,16 @@
           eros, a tempus sem augue at risus.
         </p>
       </div>
+
       <img src="./img/image3.png" style="height: 500px;" />
     </div>
   </main>
+
   <footer>
     <%- include ('../partials/footer'); %>
   </footer>
+
+  <script src="./js/app.js"></script>
 </body>
 
 </html>

@@ -9,7 +9,7 @@ Téléchargez alors toutes les dépendances en utilisant la commande:
 `npm install`
 
 Une fois que toutes les dépendances sont installées, utiliser la commande:
-`npm run dev`
+`npm run start`
 
 Le site se lancera alors sur le port 8080:
 [RKN-Ryokan Discord Community](http://localhost:8080/)
