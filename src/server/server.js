@@ -26,7 +26,7 @@ app.get("/", (req, res) => {
   res.render("pages/index");
 });
 
-const port = process.env.port || 8080;
-app.listen(port, () => {
+const port = process.env.PORT || 8080;
+app.listen(port, '0.0.0.0', () => {
   console.log(`Server started on port ${port}`);
 });
