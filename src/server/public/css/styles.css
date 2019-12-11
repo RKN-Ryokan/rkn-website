@@ -106,8 +106,6 @@ nav .nav-menu .nav-item i {
 nav .nav-menu .nav-item img {
   height: 30px;
   min-height: 30px;
-
-  filter: invert(100%);
 }
 
 
@@ -135,6 +133,8 @@ nav .nav-menu .nav-item img {
   padding: 0 5%;
 
   display: flex;
+  color: white;
+  background-color: #1f1f1f;
 }
 @media screen and (max-width: 780px) {
   .article {
