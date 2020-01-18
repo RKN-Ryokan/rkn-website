@@ -130,7 +130,7 @@ nav .nav-menu .nav-item img {
   background-size: 100% 650px;
   object-fit: cover;
 }
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 750px) {
   #banner span {
     background-image: url('../img/banner-mobile.jpg');
     background-size: 100% 650px;
