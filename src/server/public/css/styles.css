@@ -12,16 +12,10 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 body {
-  min-height: 100vh;
   margin: auto;
 
   display: flex;
   flex-direction: column;
-}
-@media screen and (max-width: 780px) {
-  body {
-    width: 100vw;
-  }
 }
 
 
@@ -29,57 +23,52 @@ body {
 
 
 /* Structural modifications */
-header {
+nav {
   width: 100vw;
+  height: 15vh;
+
+  padding: 0 2%;
   position: fixed;
+
+  display: flex;
+  flex-direction: row;
+
   
   background-color: #0a1441;
   border-bottom: 3px solid #de1516;
 }
 
 main {
-  flex: 1;
+  margin-top: 15vh;
+
   background-color: white;
 }
 
 footer {
   color: white;
-  border-top: 3px solid #de1516;
   background-color: #0a1441;
+  border-top: 3px solid #de1516;
 }
 
 
 
 
 
-/* Navigation - Navbar */
-nav {
-  height: 15vh;
-  padding: 0 2%;
-
-  display: flex;
-  flex-direction: row;
-}
-@media screen and (max-width: 780px) {
-  nav {
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-}
-
+/* Navbar */
 nav .logo {
   display: flex;
   align-items: center;
 
   cursor: pointer;
 }
+
 nav .logo img {
   height: 14vh;
-  vertical-align: middle;
 }
 
 nav .nav-menu {
   width: 100%;
+
   padding: 0 2%;
 
   display: flex;
@@ -93,9 +82,11 @@ nav .nav-menu .nav-item {
   align-items: center;
 
   color: white;
-  cursor: pointer;
   text-decoration: none;
+
+  cursor: pointer;
 }
+
 nav .nav-menu .nav-item:hover {
   background-color: #de1516;
 }
@@ -113,18 +104,17 @@ nav .nav-menu .nav-item img {
 
 
 
+/* Main Content */
+
 /* Banner */
 #banner {
   width: 100%;
   height: 100%;
-  margin-top: 15vh;
 
   display: flex;
   justify-content: center;
-
-  color: white;
-  background-color: white;
 }
+
 #banner img {
   width: 100%;
   height: 100%;
@@ -132,44 +122,95 @@ nav .nav-menu .nav-item img {
 
 
 
+/* Article light */
 .article {
   padding: 0 5%;
 
   display: flex;
+  align-items: center;
+
   color: black;
   background-color: #FFD4A3;
 }
-@media screen and (max-width: 780px) {
-  .article {
-    flex-direction: column;
-  }
-}
 
+
+
+/* Article dark */
 .article-inverse {
   padding: 0 5%;
 
   display: flex;
+  align-items: center;
 
   color: white;
   background-color: #0a1441;
 }
-@media screen and (max-width: 780px) {
-  .article-inverse {
-    flex-direction: column;
-  }
-}
 
+
+
+/* Articles content */
 .article-content {
-  padding: 2% 0;
+  width: 100%;
+  padding: 2% 2%;
 }
 
 
 
+.article img.small, .article-inverse img.small {
+  height: 200px;
+
+  padding: 3% 0;
+}
+
+.article img.medium, .article-inverse img.medium {
+  height: 300px;
+
+  padding: 3% 0;
+}
+
+.article img.big, .article-inverse img.big {
+  height: 400px;
+
+  padding: 3% 0;
+}
+
+
+
+.article .team-member {
+  width: 100%;
+
+  display: flex;
+}
+
+.article .team-member.right {
+  justify-content: flex-end;
+}
+
+.article .team-member.right h2, .article .team-member.right h3 {
+  text-align: right;
+}
+
+.article .team-member img.chibi {
+  height: 200px;
+}
+
+.article .team-member h3 {
+  color: #555555;
+}
+
+
+
+
+
+/* Footer content */
 .footer-content {
   padding: 5% 5% 0;
 }
 
+
+
 .copyright {
   padding: 1% 0 0;
+
   border-top: 2px solid white;
 }

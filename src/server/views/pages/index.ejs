@@ -1,85 +1,212 @@
 <!DOCTYPE html>
 <html lang="en">
 
+
+
+
+
 <head>
   <%- include ('../partials/head'); %>
 </head>
 
-<body>
-  <header>
-    <%- include ('../partials/header'); %>
-  </header>
 
-  <banner>
-    <%- include ('../partials/banner'); %>
-  </banner>
+
+
+
+<body>
+  <nav>
+    <%- include ('../partials/navigation'); %>
+  </nav>
+
+
+
+
 
   <main>
-    <div id="team" class="article-inverse">
-      <img src="./img/image3.png" style="height: 500px;" />
+    <banner>
+      <%- include ('../partials/banner'); %>
+    </banner>
+
+
+
+    <div id="home" class="article-inverse">
+      <img src="./img/logo-square.png" class="big" />
 
       <div class="article-content">
-        <h1>Présentation de l'équipe</h1>
+        <h1>Présentation de la communauté</h1>
+
         <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi ultricies luctus arcu eu euismod. Cras vitae
-          tortor arcu. Vestibulum non nibh ante. Quisque ipsum tellus, tincidunt varius ultrices sed, placerat eget
-          odio. Etiam pharetra nisi purus, eu tristique ligula luctus vitae. Curabitur aliquam arcu mauris, sed pulvinar
-          quam euismod sed. Sed gravida, sapien quis fringilla lacinia, erat arcu cursus nisi, a sagittis erat massa
-          eget urna. Aenean ullamcorper eleifend metus at bibendum. Donec at odio id diam feugiat fringilla eu et arcu.
+          Oyez, peuple Terrien et pro de jeux en tout genre !
         </p>
 
         <p>
-          Mauris ante urna, sodales sed lobortis vitae, pellentesque eget orci. Donec id tristique ex, ut dictum sem.
-          Aenean vulputate dignissim sem eu tristique. Etiam sagittis vulputate gravida. Maecenas pulvinar dignissim
-          felis sit amet porttitor. Mauris eget molestie eros, nec efficitur sapien. Suspendisse potenti. Vivamus
-          placerat fringilla finibus. Aliquam at vestibulum est. Etiam a vestibulum velit. Vestibulum vitae venenatis
-          dui. Ut et lorem maximus, hendrerit nunc ut, accumsan mi. Morbi vulputate condimentum urna id pharetra. Nulla
-          lacinia dapibus eros.
+          Bienvenue à vous tous sur le site de la communauté RYOKAN;
+          Je m'appelle Khannelle et je suis le chef du pole communication.
+          Dans cette communauté, vous pourrez participer à des évènements tournés autour du gaming et de la création.
+          <br>
+          Ces deux sujets sont intrinsèquement liés, d'ailleurs.
+          Pour cause lors de mes sessions de Masterclass , vous aurez l'occasion de voir des illustrations en live sur
+          le thème du jeu vidéo.
+          Et bien sûr beaucoup de choses viendront par la suite.
         </p>
 
         <p>
-          Quisque vitae efficitur eros, eu vestibulum lacus. Nunc a ultrices tellus. Nullam ornare ut eros vel iaculis.
-          Suspendisse ornare metus vel lacus vestibulum, nec lacinia nisl faucibus. Pellentesque in ornare purus. Donec
-          tempor in quam non bibendum. Morbi a odio ac metus ornare pharetra. Donec molestie dapibus maximus. Sed
-          volutpat mollis odio, eget blandit est pharetra eget. Sed vehicula mi nec eleifend malesuada. Nullam dapibus
-          varius nulla volutpat gravida. Vivamus sed ornare ex. Donec ac auctor nulla. Sed rutrum porta eros eu
-          pellentesque. Aenean volutpat hendrerit ornare. Sed dictum, dui ac porta imperdiet, libero tortor posuere
-          eros, a tempus sem augue at risus.
+          N'hésitez pas à checker les nouveautés sur notre discord !
+          <br>
+          N'oubliez pas notre devise : <b>FUN-RESPECT-GAMING !!!</b>
         </p>
       </div>
     </div>
 
-    <div id="discord" class="article">
+
+
+    <div id="team" class="article">
+      <div class="article-content">
+        <h1>Présentation de l'équipe</h1>
+
+        <div class="team-member">
+          <img src="./img/chibi-shadow.png" class="chibi">
+
+          <div>
+            <h2>Gérant de la communauté :</h2>
+
+            <h3 style="color: #555555;">RKN-Shadow</h3>
+
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi ultricies luctus arcu eu euismod.</p>
+          </div>
+        </div>
+
+        <div class="team-member right">
+          <div>
+            <h2>Manager Pôle Communication :</h2>
+
+            <h3 style="color: #555555;">RKN-Khannelle</h3>
+
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi ultricies luctus arcu eu euismod.</p>
+          </div>
+
+          <img src="./img/chibi-khannelle.png" class="chibi">
+        </div>
+
+        <div class="team-member">
+          <img src="./img/chibi-azazyx.png" class="chibi">
+
+          <div>
+            <h2>Assistant Pôle Communication, Discord et Events :</h2>
+
+            <h3 style="color: #555555;">Azazyx</h3>
+
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi ultricies luctus arcu eu euismod.</p>
+          </div>
+        </div>
+
+        <div class="team-member right">
+          <div>
+            <h2>Assistant Pôle Communication :</h2>
+
+            <h3 style="color: #555555;">Ryuken</h3>
+
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi ultricies luctus arcu eu euismod.</p>
+          </div>
+
+          <img src="./img/chibi-ryuken.png" class="chibi">
+        </div>
+
+        <div class="team-member">
+          <img src="./img/chibi-gargarenris.png" class="chibi">
+
+          <div>
+            <h2>Manager Pôle Développement :</h2>
+
+            <h3 style="color: #555555;">Gargarenris</h3>
+
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi ultricies luctus arcu eu euismod.</p>
+          </div>
+        </div>
+
+        <div class="team-member right">
+          <div>
+            <h2>Manager Pôle Discord :</h2>
+
+            <h3 style="color: #555555;">Nep Voodoo</h3>
+
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi ultricies luctus arcu eu euismod.</p>
+          </div>
+
+          <img src="./img/chibi-nep-voodoo.png" class="chibi">
+        </div>
+
+        <div class="team-member">
+          <img src="./img/chibi-kiri.png" class="chibi">
+
+          <div>
+            <h2>Manager Pôle Events et Marketing :</h2>
+
+            <h3 style="color: #555555;">Kiri</h3>
+
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi ultricies luctus arcu eu euismod.</p>
+          </div>
+        </div>
+
+        <div class="team-member right">
+          <div>
+            <h2>Assistant Pôle Events :</h2>
+
+            <h3 style="color: #555555;">Cachou</h3>
+
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi ultricies luctus arcu eu euismod.</p>
+          </div>
+
+          <img src="./img/chibi-cachou.png" class="chibi">
+        </div>
+
+        <div class="team-member">
+          <img src="./img/chibi-sub.png" class="chibi">
+
+          <div>
+            <h2>Assistant Pôle Events :</h2>
+
+            <h3 style="color: #555555;">Submoney</h3>
+
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi ultricies luctus arcu eu euismod.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="discord" class="article-inverse">
+      <img src="./img/discord-image.png" style="height: 200px; padding: 5% 5% 5% 0;" />
+
       <div class="article-content">
         <h1>Discord</h1>
         <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi ultricies luctus arcu eu euismod. Cras vitae
-          tortor arcu. Vestibulum non nibh ante. Quisque ipsum tellus, tincidunt varius ultrices sed, placerat eget
-          odio. Etiam pharetra nisi purus, eu tristique ligula luctus vitae. Curabitur aliquam arcu mauris, sed pulvinar
-          quam euismod sed. Sed gravida, sapien quis fringilla lacinia, erat arcu cursus nisi, a sagittis erat massa
-          eget urna. Aenean ullamcorper eleifend metus at bibendum. Donec at odio id diam feugiat fringilla eu et arcu.
+          Nous sommes implantés sur Discord en attendant la version finale de notre site.
         </p>
-
-        <p>
-          Mauris ante urna, sodales sed lobortis vitae, pellentesque eget orci. Donec id tristique ex, ut dictum sem.
-          Aenean vulputate dignissim sem eu tristique. Etiam sagittis vulputate gravida. Maecenas pulvinar dignissim
-          felis sit amet porttitor. Mauris eget molestie eros, nec efficitur sapien. Suspendisse potenti. Vivamus
-          placerat fringilla finibus. Aliquam at vestibulum est. Etiam a vestibulum velit. Vestibulum vitae venenatis
-          dui. Ut et lorem maximus, hendrerit nunc ut, accumsan mi. Morbi vulputate condimentum urna id pharetra. Nulla
-          lacinia dapibus eros.
-        </p>
-
-        <p>
-          Quisque vitae efficitur eros, eu vestibulum lacus. Nunc a ultrices tellus. Nullam ornare ut eros vel iaculis.
-          Suspendisse ornare metus vel lacus vestibulum, nec lacinia nisl faucibus. Pellentesque in ornare purus. Donec
-          tempor in quam non bibendum. Morbi a odio ac metus ornare pharetra. Donec molestie dapibus maximus. Sed
-          volutpat mollis odio, eget blandit est pharetra eget. Sed vehicula mi nec eleifend malesuada. Nullam dapibus
-          varius nulla volutpat gravida. Vivamus sed ornare ex. Donec ac auctor nulla. Sed rutrum porta eros eu
-          pellentesque. Aenean volutpat hendrerit ornare. Sed dictum, dui ac porta imperdiet, libero tortor posuere
-          eros, a tempus sem augue at risus.
-        </p>
+        <p>Venez nous soutenir sur le lien suivant: </p>
+        <a href="https://discord.me/ryokan" style="color: white;">https://discord.me/ryokan</a>
       </div>
+    </div>
 
+    <div id="team" class="article">
+      <div class="article-content">
+        <h1>Contact</h1>
+        <form>
+          <div>
+            Email
+          </div>
+          <div>
+            Catégorie support: Com, Dev, Site, Sup, Plainte, Discord
+          </div>
+          <div>
+            Sujet
+          </div>
+          <div>
+            Message
+          </div>
+          <button>Submit</button>
+          <!-- Réponse automatique: Mail qui dis on vous répondra dans les 48h-->
+        </form>
+      </div>
       <img src="./img/image3.png" style="height: 500px;" />
     </div>
   </main>
