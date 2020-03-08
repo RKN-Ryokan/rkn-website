@@ -28,20 +28,20 @@ nav {
   height: 15vh;
 
   padding: 0 2%;
-  position: fixed;
 
   display: flex;
   flex-direction: row;
 
+  position: fixed;
   
   background-color: #0a1441;
   border-bottom: 3px solid #de1516;
 }
 
 main {
-  margin-top: 15vh;
-
   background-color: white;
+
+  margin-top: 15vh;
 }
 
 footer {
@@ -49,9 +49,6 @@ footer {
   background-color: #0a1441;
   border-top: 3px solid #de1516;
 }
-
-
-
 
 
 /* Navbar */
@@ -100,10 +97,6 @@ nav .nav-menu .nav-item img {
   min-height: 30px;
 }
 
-
-
-
-
 /* Main Content */
 
 /* Banner */
@@ -119,7 +112,6 @@ nav .nav-menu .nav-item img {
   width: 100%;
   height: 100%;
 }
-
 
 
 /* Article light */
@@ -199,6 +191,71 @@ nav .nav-menu .nav-item img {
 }
 
 
+
+/* Contact form */
+.contact-form-input {
+  padding: 5px;
+
+  width: 80%;
+  background-color: #0A1441;
+
+  border: solid 3px #de1516;
+  border-radius: 3px;
+}
+.contact-form-input > input, select, textarea {
+  width: 100%;
+  border: none;
+  outline: 0;
+
+  color: #ffffff;
+  font-family: "Sulphur Point", sans-serif;
+  background-color: #0A1441;
+}
+.contact-form-input > input::placeholder, textarea::placeholder {
+  color: #ffffff;
+}
+.contact-form-input > input, select {
+  height: 30px;
+}
+
+.contact-form-input > select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+.contact-form-input > select > option {
+  width: 100%;
+  height: 30px;
+  line-height: 30px;
+}
+
+.contact-form-input > textarea {
+  height: 200px;
+  resize: none;
+}
+
+.contact-form-submit {
+  width: 80%;
+  display: flex;
+  justify-content: center;
+}
+
+.contact-form-submit > button {
+  margin: 1rem 0;
+  padding: 1rem 5rem;
+
+  border: solid 3px #0a1441;
+  border-radius: 3px;
+
+  color: #ffffff;
+  background-color: #de1516;
+}
+
+.contact-form-submit > button:hover {
+  cursor: pointer;
+  font-weight: bold;
+}
 
 
 
